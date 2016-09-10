@@ -11,10 +11,10 @@
                 "ageLimit": 100,
                 "patientAttributes": [],
                 "addressFields": [
-                    "address1",
-                    "address2",
                     "cityVillage",
-                    "countryDistrict"
+                    "address3",
+                    "countyDistrict",
+                    "stateProvince"
                 ]
             },
             "diagnosis": {
@@ -23,7 +23,7 @@
                 "showCertainty": true,
                 "showOrder": true,
                 "showDetailsButton": true,
-                "displayOrder": 1
+                "displayOrder": 6
             },
             "navigationLinksControl": {
                 "translationKey": "DASHBOARD_TITLE_NAVIGATION_LINKS_CONTROL_KEY",
@@ -36,12 +36,12 @@
                 "showDetailsButton": true,
                 "type": "disposition",
                 "numberOfVisits": 1,
-                "displayOrder": 3
+                "displayOrder": 9
             },
             "treatments": {
                 "translationKey": "DASHBOARD_TITLE_TREATMENTS_KEY",
                 "type": "treatment",
-                "displayOrder": 4,
+                "displayOrder": 14,
                 "dashboardConfig": {
                     "showFlowSheet": true,
                     "showListView": true,
@@ -71,7 +71,7 @@
             "programs": {
                 "translationKey": "DASHBOARD_TITLE_PROGRAMS_KEY",
                 "type": "programs",
-                "displayOrder": 6
+                "displayOrder": 11
             },
             "radiologyOrders": {
                 "orderType": "Radiology Order",
@@ -89,7 +89,7 @@
                 "orderType": "Radiology Order",
                 "type": "pacsOrders",
                 "translationKey": "DASHBOARD_TITLE_PACS_KEY",
-                "displayOrder": 8,
+                "displayOrder": 10,
                 "dashboardConfig": {
                     "pacsImageUrl": "/oviyam2/viewer.html?patientID={{patientID}}&accessionNumber={{orderNumber}}",
                     "numberOfVisits": 4
@@ -100,7 +100,7 @@
                 "type": "ordersControl",
                 "orderType": "Lab Order",
                 "showDetailsButton": true,
-                "displayOrder": 9,
+                "displayOrder": 3,
                 "dashboardConfig": {
                     "conceptNames": [
                         "Systolic",
@@ -119,21 +119,10 @@
                     "showDetailsButton":true
                 }
             },
-            "bacteriologyResults": {
-                "translationKey": "DASHBOARD_TITLE_BACTERIOLOGY_RESULTS_KEY",
-                "type": "bacteriologyResultsControl",
-                "scope": "All",
-                "orderType": "",
-                "dashboardConfig": {
-                    "conceptNames": [
-                        "BACTERIOLOGY CONCEPT SET"
-                    ]
-                }
-            },
             "labResults": {
                 "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY",
                 "type": "labOrders",
-                "displayOrder": 10,
+                "displayOrder": 8,
                 "dashboardConfig": {
                     "title": null,
                     "numberOfVisits": 1,
@@ -148,80 +137,37 @@
                 }
             },
             "nutritionalValues": {
-                "translationKey": "DASHBOARD_TITLE_NUTRITIONAL_VALUES_KEY",
+                "translationKey": "Nutrition and Vitals",
                 "type": "vitals",
                 "isObservation": true,
-                "displayOrder": 11,
+                "displayOrder": 1,
                 "dashboardConfig": {
                     "conceptNames": [
-                        "HEIGHT",
-                        "Weight",
-                        "BMI",
-                        "BMI STATUS"
+                        "Height (cm)",
+                        "Weight (kg)",
+                        "Arm Circumference",
+                        "Pulse (/min)",
+                        "SPO2%","RR (/min)",
+                        "Temperature (F)",
+                        "Systolic BP (mm Hg)",
+                        "Diastolic BP (mm Hg)"
                     ],
                     "showDetailsButton":true,
                     "numberOfVisits": 2
                 },
                 "expandedViewConfig": {
                     "conceptNames": [
-                        "HEIGHT",
-                        "Weight",
-                        "BMI",
-                        "BMI STATUS"
+                        "Height (cm)",
+                        "Weight (kg)",
+                        "Arm Circumference",
+                        "Pulse (/min)",
+                        "SPO2%","RR (/min)",
+                        "Temperature (F)",
+                        "Systolic BP (mm Hg)",
+                        "Diastolic BP (mm Hg)"
                     ],
                     "numberOfVisits": 2,
                     "scope": "latest",
-                    "showDetailsButton": true,
-                    "pivotTable": {}
-                }
-            },
-            "vitals": {
-                "translationKey": "DASHBOARD_TITLE_VITALS_KEY",
-                "type": "vitals",
-                "isObservation": true,
-                "displayOrder": 12,
-                "dashboardConfig": {
-                    "showDetailsButton": true,
-                    "conceptNames": [
-                        "Vitals"
-                    ],
-                    "numberOfVisits": 2
-                },
-                "expandedViewConfig": {
-                    "conceptNames": [
-                        "Vitals"
-                    ],
-                    "numberOfVisits": 2,
-                    "showDetailsButton": true,
-                    "pivotTable": {
-                        "numberOfVisits": "10",
-                        "groupBy": "encounters",
-                        "obsConcepts": [
-                            "Weight",
-                            "Vitals"
-                        ],
-                        "drugConcepts": [],
-                        "labConcepts": []
-                    }
-                }
-            },
-            "secondVitals": {
-                "translationKey": "DASHBOARD_TITLE_SECOND_VITALS_KEY",
-                "type": "second vitals",
-                "isObservation": true,
-                "displayOrder": 13,
-                "dashboardConfig": {
-                    "showDetailsButton": true,
-                    "conceptNames": [
-                        "Second Vitals"
-                    ],
-                    "numberOfVisits": 2
-                },
-                "expandedViewConfig": {
-                    "conceptNames": [
-                        "Second Vitals"
-                    ],
-                    "numberOfVisits": 2,
                     "showDetailsButton": true,
                     "pivotTable": {}
                 }
@@ -230,7 +176,7 @@
                 "translationKey": "DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY",
                 "type": "vitals",
                 "isObservation": true,
-                "displayOrder": 14,
+                "displayOrder": 4,
                 "dashboardConfig": {
                     "showDetailsButton": true,
                     "conceptNames": [

@@ -37,8 +37,8 @@
         "type": "config",
         "extensionParams": {
             "conceptName": "Nutritional Values",
-            "translationKey": "NUTRITIONAL_VALUES_LOCALE_KEY",
-            "conceptNames": ["Height", "Weight", "BMI", "BMI STATUS"],
+            "translationKey": "Nutritional, Habits and Vitals Form",
+            "conceptNames": ["Height (cm)","Weight (kg)","Arm Circumference","Pulse (/min)","SPO2%","RR (/min)","Temperature (F)","Systolic BP (mm Hg)","Diastolic BP (mm Hg)"],
             "required":true,
             "showLatest": true
         },

@@ -77,7 +77,8 @@
         "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
         "type": "config",
         "extensionParams": {
-            "conceptName": "Gynaecology"
+            "conceptName": "Gynaecology",
+            "default": true
         },
         "order": 5,
         "requiredPrivilege": "app:clinical"

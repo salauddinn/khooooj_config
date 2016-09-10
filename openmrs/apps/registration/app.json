@@ -78,6 +78,12 @@
                     "required": true,
                     "label": "Fee"
                 },
+                "Patient Tobacco History":{
+                    "multiSelect": true
+                },
+                "Partners Tobacco History":{
+                    "multiSelect": true
+                },
                 "FHS": {
                     "buttonSelect": true
                 },
