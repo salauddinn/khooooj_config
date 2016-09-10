@@ -100,7 +100,12 @@
           "Tablet": {
             "doseUnits": "Tablet(s)",
             "route": "Oral"
+          },
+          "Tablet(s)": {
+            "doseUnits": "Tablet(s)",
+            "route": "Oral"
           }
+
         }
       }
     }
