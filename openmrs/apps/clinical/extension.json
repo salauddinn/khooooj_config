@@ -184,7 +184,8 @@
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
     "type": "config",
     "extensionParams": {
-      "conceptName": "Gynaecology"
+      "conceptName": "Gynaecology",
+      "default": true
     },
     "order": 5,
     "requiredPrivilege": "app:clinical"
@@ -222,17 +223,6 @@
     "url": "orders",
     "icon": "icon-user-md",
     "order": 6,
-    "requiredPrivilege": "app:clinical:diagnosisTab"
-  },
-  "bahmniClinicalConsultationBacteriology": {
-    "id": "bahmni.clinical.consultation.bacteriology",
-    "extensionPointId": "org.bahmni.clinical.consultation.board",
-    "type": "link",
-    "label": "Bacteriology",
-    "translationKey":"BACTERIOLOGY_BOARD_LABEL_KEY",
-    "url": "bacteriology",
-    "icon": "icon-user-md",
-    "order": 7,
     "requiredPrivilege": "app:clinical:diagnosisTab"
   }
 }
