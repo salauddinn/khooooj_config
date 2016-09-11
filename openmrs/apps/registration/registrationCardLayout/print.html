@@ -9,28 +9,27 @@
                     <td>
                         <h3 class="print-table-header">Notice</h3>
                         <ul class="print-table-left-body">
-                            <li>
-                                {{ "REGISTRATION_BRING_CARD_TEXT_KEY" | translate }}
+
+                          <li>
+                                ✓ {{ "REGISTRATION_TREATMENT_NOTE" | translate }}
+                            </li>
+                          <li>
+                                ✓ {{ "REGISTRATION_TREATMENT_RATES" | translate}}
+                            </li>
+                                
+                                ✓ {{ "REGISTRATION_TREATMENTS_AVAILABLE" | translate }}
                             </li>
                             <li>
-                                {{ "REGISTRATION_TAKE_MEDICINES_TEXT_KEY" | translate}}
+                               ✓ {{ "REGISTRATION_MEDICINE_RATES" | translate }}
                             </li>
                             <li>
-                                {{ "REGISTRATION_TIMINGS_TEXT_KEY" | translate }}
+                                ✓ {{ "REGISTRATION_OPERATIONS_AVAILABLE" | translate }}
                             </li>
-                            <li>
-                               {{ "REGISTRATION_OPD_DAYS_TEXT_KEY" | translate }}
+                             <li>
+                                ✓ {{ "REGISTRATION_SCREENING_AVAILABLE" | translate }}
                             </li>
-                            <li>
-                                {{ "REGISTRATION_SUNDAYS_HOLIDAY_TEXT_KEY" | translate }}
-                            </li>
+                            
                         </ul>
-                        <div class="caution">
-                            <h3 class="print-table-header">Caution</h3>
-                            <p>
-                                {{ "REGISTRATION_SMOKING_INJURIOUS_TEXT_KEY" | translate }}
-                            </p>
-                        </div>
                     </td>
                 </tr>
             </table>
@@ -47,7 +46,11 @@
                         <h3>
                         {{ "REGISTRATION_INSTITUTE_NAME_TEXT_KEY" | translate }}
                         </h3>
-                        <h3 class="print-center">{{ "REGISTRATION_INSTITUTE_REGISTERED_TEXT_KEY" |  translate }}</h3>
+                         <h3>
+                        {{ "REGISTRATION_INSTITUTE_NAME2_TEXT_KEY" | translate }}
+                        </h3>
+                        
+        
                     </td>
                     <td class="registrationCard-photo">
                         <img ng-src="{{patient.image}}" style="width: 20mm; height: 20mm; "
@@ -87,42 +90,41 @@
                 </tr>
                 <tr>
                     <td class="registrationCard-details-name">
-                        <span class="hindi-text">Age</span>
-                    </td>
-                    <td class="registrationCard-details-seperator"> :  </td>
-                    <td>{{patient.age | age}} </td>
-                </tr>
-                <tr>
-                    <td class="registrationCard-details-name">
-                        <span class="hindi-text">Gender</span>
-                    </td>
-                    <td class="registrationCard-details-seperator"> :  </td>
-                    <td>{{patient.gender}} </td>
-                </tr>
-                <tr>
-                    <td class="registrationCard-details-name">
-                        <span class="hindi-text">Address</span>
-                    </td>
-                    <td class="registrationCard-details-seperator"> :  </td>
-                    <td>{{patient.primaryRelative}} </td>
-                </tr>
-                <tr>
-                    <td class="registrationCard-details-name">
                         <span class="hindi-text">Village</span>
                     </td>
                     <td class="registrationCard-details-seperator"> :  </td>
                     <td>{{patient.address.cityVillage}} </td>
                 </tr>
-                <tr>
-                    <td class="registrationCard-details-name">
-                        <span class="hindi-text">Tehsil</span>
-                    </td>
-                    <td class="registrationCard-details-seperator"> :  </td>
-                    <td>{{patient.address.address3}} </td>
-                </tr>
                 </tbody>
             </table>
+            <table class="registrationCard-notes" border="1">
+                <tr>
+                  <td class="registrationCard-notes-instructions">
+                      <ul>
+                          <li>
+                            {{ "REGISTRATION_TIMINGS" | translate }}
+                          </li>
+                          <li> 
+                             {{ "REDISTRATION_SUNDAY_IS_CLOSED" | translate }}
+                           </li>
+                          <li>
+                             {{ "REGISTRATION_CARD_NECCESSARY" | translate }}
+                          
+                          </li>
+                      </ul>
+                  </td>
+                  <td>
+                      <p>code  : (07138)</p><br>
+                      <p>ph no.  : 255410</p>
+
+                  </td>  
+
+                </tr>
+
+            </table>
+
         </td>
     </tr>
     </tbody>
 </table>
+  
