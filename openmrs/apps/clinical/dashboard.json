@@ -441,5 +441,86 @@
                 }
             }
         }
+    },
+    "referralform": {
+        "translationKey": "Referral Form",
+        "displayType": "Full-Page",
+        "printing": {
+            "title": "",
+            "header": "",
+            "logo": ""
+        },
+        "sections": {
+            "Referral Form": {
+                "type": "custom",
+                "displayType": "Full-Page",
+                "displayOrder": 1,
+                "config": {
+                    "title": "Referral form doctor",
+                    "template": "<referralfm-doctor></referralfm-doctor>"
+                }
+            },
+            "diagnosis": {
+                "title": "Diagnosis",
+                "displayType": "Full-Page",
+                "displayOrder": 2,
+                "showRuledOutDiagnoses": false,
+                "type": "diagnosis",
+                "showCertainty": false,
+                "showOrder": true,
+                "showDetailsButton": true,
+                "numberOfVisits": 4
+            },
+            "labResults": {
+                     "title": "Lab Results",
+                     "displayType": "Full-Page",
+                     "type": "labOrders",
+                     "displayOrder": 3,
+                     "dashboardParams": {
+                    "title": "Lab Investigations",
+                    "showChart": true,
+                    "showTable": false,
+                    "showNormalLabResults": true,
+                    "showCommentsExpanded": true,
+                    "showAccessionNotes": true,
+                    "numberOfVisits": 6,
+                    "showDetailsButton": false
+                }
+            },
+            "treatment": {
+                    "title": "Treatments",
+                    "displayType": "Full-Page",
+                    "type": "treatment",
+                    "displayOrder": 4,
+                    "dashboardParams": {
+                    "showFlowSheet": false,
+                    "showListView": true,
+                    "showRoute": false,
+                    "showDrugForm": false,
+                    "numberOfVisits": 4,
+                    "showOtherActive": true,
+                    "showDetailsButton": false
+                },
+                "allTreatmentDetails": {
+                    "title": "Treatments",
+                    "showFlowSheet": false,
+                    "showListView": true,
+                    "showRoute": true,
+                    "showDrugForm": true,
+                    "numberOfVisits": 4,
+                    "showOtherActive": true,
+                    "showDetailsButton": true
+                }
+            },
+            "referralSummary": {
+                "type": "custom",
+                "displayType": "Full-Page",
+                "displayOrder": 5,
+                "config": {
+                    "title": "",
+                    "template": "<referral-summary></referral-summary>"
+                }
+            }
+     }   
     }
 }
