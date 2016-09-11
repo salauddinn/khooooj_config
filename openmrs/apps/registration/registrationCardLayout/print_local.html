@@ -10,27 +10,23 @@
                         <h3 class="print-table-header">सूचना</h3>
                         <ul class="print-table-left-body">
                             <li>
-                                स्वास्थ्य केन्द्र में पुनः आने के समय यह कार्ड लाना अति आवश्यक है ।
+                               ✓ स्त्री रोग , गरोदरपणातील  तपासणी ,सिकल सेल,क्षयरोग वंधत्व ,गुप्तरोग ,हृदयरोग  ,मधुमेह,रक्तदाब,पाठीचे रोग ,मानसिक रोग,लैंगिक तपासणी व उपचार होतो. 
                             </li>
                             <li>
-                                दवा डाक्टर के निर्देशानुसार ही लें ।
+                               ✓ सवलतीच्या दरात उपचार होतो. 
                             </li>
                             <li>
-                                केन्द्र में पंजीयन का समय - प्रातः 8:30 से  दोपहर 12:00 बजे तक ।
+                                ✓ ई .सी .जी. ,एक्सरे ,सोनोग्राफी ,(गरोदर  स्त्रियांची ),रक्त,मल-मुत्र ,थुंकी  तपासणी होते. 
                             </li>
                             <li>
-                                ओ.पी.डी. के दिन - सोम, बुध, शुक्र ।
+                              ✓ औषधे कमी किंमतींत मिळतात .
                             </li>
-                            <li>
-                                साप्ताहिक अवकाश - रविवार ।
-                            </li>
+                           <li>
+                               ✓ अधिकृत गर्भपात व स्त्रियांची कुटूंब नियोजन शस्त्रक्रिया होते . 
+                           </li>
+                           <li>✓ हायड्रोसिल ,हर्निया ,मूळव्याध ,प्लॉस्टिक सर्जरी ,अपेंडिक्स ,मूत्रखडा ,गर्भाशयाचे विकार ,पाठ कंबर दुखीचे शिबीर होतात . </li>
                         </ul>
-                        <div class="caution">
-                            <h3 class="print-table-header">सावधान</h3>
-                            <p>
-                                बीडी, तम्बाकू, गुटका से केंसर, ह्रदय रोग और दमा हो सकते हैं ।
-                            </p>
-                        </div>
+                        
                     </td>
                 </tr>
             </table>
@@ -44,10 +40,11 @@
                         </p>
                     </td>
                     <td class="print-table-right-header">
-                            <h3>
-                                जन&nbsp;स्वास्थ्य&nbsp;सहयोग  
+                             <h3>
+                                सर्च<br>
+                                माँ&nbsp;दंतेश्वरी&nbsp;दवाखाना 
                             </h3>
-                            <h3 class="print-center">(पंजीकृत)</h3>
+                        
                     </td>
                     <td class="registrationCard-photo">
                         <img ng-src="{{patient.image}}" style="width: 20mm; height: 20mm; "
@@ -56,7 +53,7 @@
                 </tr>
                 <tr>
                     <td colspan="3" class="print-center registrationCard-location">
-                        गनियारी, जिला - बिलासपुर
+                       शोधग्राम , गडचिरोली  - ४४२६०५
                     </td>
                 </tr>
             </table>
@@ -64,64 +61,55 @@
                 <tbody>
                 <tr>
                     <td class="registrationCard-details-name">
-                        <span class="hindi-text">दिनाँक</span>
+                        <span class="marathi-text">तारीख </span>
                     </td>
                     <td class="registrationCard-details-seperator"> :  </td>
                     <td>{{patient.registrationDate | bahmniDate}} </td>
                 </tr>
                 <tr>
                     <td class="registrationCard-details-name">
-                        <span class="hindi-text">रजिस्ट्रेशन</span>
+                        <span class="marathi-text">केस नं</span>
                     </td>
                     <td class="registrationCard-details-seperator"> :  </td>
                     <td>{{patient.identifier}} </td>
                 </tr>
                 <tr>
                     <td class="registrationCard-details-name">
-                        <span class="hindi-text">नाम</span>
+                        <span class="marathi-text">नाव</span>
                     </td>
                     <td class="registrationCard-details-seperator"> :  </td>
                     <td>
-                        <span class="hindi-text">{{patient.fullNameLocal()}}</span>
+                        <span class="marathi-text">{{patient.fullNameLocal()}}</span>
                     </td>
                 </tr>
                 <tr>
                     <td class="registrationCard-details-name">
-                        <span class="hindi-text">उम्र</span>
-                    </td>
-                    <td class="registrationCard-details-seperator"> :  </td>
-                    <td>{{patient.age | age}} </td>
-                </tr>
-                <tr>
-                    <td class="registrationCard-details-name">
-                        <span class="hindi-text">लिंग</span>
-                    </td>
-                    <td class="registrationCard-details-seperator"> :  </td>
-                    <td>{{patient.gender}} </td>
-                </tr>
-                <tr>
-                    <td class="registrationCard-details-name">
-                        <span class="hindi-text">पिता/पति</span>
-                    </td>
-                    <td class="registrationCard-details-seperator"> :  </td>
-                    <td>{{patient.primaryRelative}} </td>
-                </tr>
-                <tr>
-                    <td class="registrationCard-details-name">
-                        <span class="hindi-text">गाँव</span>
+                        <span class="marathi-text">गाव</span>
                     </td>
                     <td class="registrationCard-details-seperator"> :  </td>
                     <td>{{patient.address.cityVillage}} </td>
                 </tr>
-                <tr>
-                    <td class="registrationCard-details-name">
-                        <span class="hindi-text">तहसील</span>
-                    </td>
-                    <td class="registrationCard-details-seperator"> :  </td>
-                    <td>{{patient.address.address3}} </td>
-                </tr>
                 </tbody>
             </table>
+            <table class="registrationCard-notes" border="1">
+                <tr>
+                  <td class="registrationCard-notes-instructions">
+                      <ul>
+                          <li>नाव नोंदणीची वेळ स .  ९ ते  दु . २ वाजेपर्यंत राहील .</li>
+                          <li> दवाखाना रविवारला बंद राहील . </li>
+                          <li>कृपया हे कार्ड प्रत्येक वेळा सोबत आणावे . अन्यथा १० रु. दंड आकारण्यात येईल .</li>
+                      </ul>
+                  </td>
+                  <td>
+                      <p>कोड  : (०७१३८)</p><br>
+                      <p>फोन नं  : २५५४१०</p>
+
+                  </td>  
+
+                </tr>
+
+            </table>
+
         </td>
     </tr>
     </tbody>
