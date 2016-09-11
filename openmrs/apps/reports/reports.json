@@ -120,6 +120,13 @@
             "applyDateRangeFor": "visitStopDate"
         }
     },
+    "diagnosisCountVisitsGender": {
+       "name": "Visit counts by diagnosis visit type and gender",
+       "type": "MRSGeneric",
+       "config": {
+           "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/diagnosisCountVisitsGender.sql"
+       }
+   },
    "aggregateReports": {
        "name": "Pulse by gender",
        "type": "aggregation",
