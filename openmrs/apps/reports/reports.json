@@ -127,6 +127,13 @@
            "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/diagnosisCountVisitsGender.sql"
        }
    },
+    "obsVitalsHabits": {
+       "name": "Observation vitals and habits report",
+       "type": "MRSGeneric",
+       "config": {
+           "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/obsVitalsHabits.sql"
+       }
+   },
    "aggregateReports": {
        "name": "Pulse by gender",
        "type": "aggregation",
