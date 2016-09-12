@@ -37,8 +37,34 @@
         "type": "config",
         "extensionParams": {
             "conceptName": "Nutritional Values",
-            "translationKey": "Nutritional, Habits and Vitals Form",
-            "conceptNames": ["Height (cm)","Weight (kg)","Arm Circumference","Pulse (/min)","SPO2%","RR (/min)","Temperature (F)","Systolic BP (mm Hg)","Diastolic BP (mm Hg)"],
+            "translationKey": "Nutritional Values",
+            "conceptNames": ["Height (cm)","Weight (kg)","Arm Circumference"],
+            "required":true,
+            "showLatest": true
+        },
+        "order": 1,
+        "requiredPrivilege": "Edit Visits"
+    },
+    "patientHabits":{
+        "id": "bahmni.registration.conceptSetGroup.nutritionalLevels",
+        "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
+        "type": "config",
+        "extensionParams": {
+            "conceptName": "Patient Habits",
+            "translationKey": "Patient Habits",
+            "required":true
+        },
+        "order": 1,
+        "requiredPrivilege": "Edit Visits"
+    },
+    "patientVitals":{
+        "id": "bahmni.registration.conceptSetGroup.vitals",
+        "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
+        "type": "config",
+        "extensionParams": {
+            "conceptName": "Patient Vitals",
+            "translationKey": "Patient Vitals",
+            "conceptNames": ["Pulse (/min)","SPO2%","RR (/min)","Temperature (F)","Systolic BP (mm Hg)","Diastolic BP (mm Hg)"],
             "required":true,
             "showLatest": true
         },
