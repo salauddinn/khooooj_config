@@ -1,4 +1,4 @@
-Select pi.identifier as 'Patient ID',
+Select Distinct pi.identifier as 'Patient ID',
 concat(concat(pn.given_name,' '),pn.family_name) as 'Patient Name',
 Cast(o.obs_datetime as date) as 'Observation Date',
 vt.name as 'Visit Type',
