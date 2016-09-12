@@ -23,5 +23,5 @@ where cast(o.obs_datetime as date) BETWEEN '#startDate#' and '#endDate#'
 and o.obs_group_id is not null
 and cn.concept_name_type in('FULLY_SPECIFIED')
 and cn.concept_id in (Select cset.concept_id from concept_set cset, concept_name cname where cset.concept_set=cname.concept_id
-and cname.name='Nutritional Values')
+and cname.name in ('Nutritional Values','Patient Habits','Patient Vitals'))
 Order by Cast(o.obs_datetime as date),pi.identifier,vt.name,cn.name;
