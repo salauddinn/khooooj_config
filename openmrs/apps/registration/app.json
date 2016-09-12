@@ -17,6 +17,9 @@
             "activeVisitUuid"
         ],
         "config" : {
+            "mandatoryPersonAttributes":[
+                    "Registration Fee"
+                ],
             "patientInformation": {
                 "additionalPatientInformation": {
                     "title": "Additional Patient Information",
@@ -30,6 +33,7 @@
                         "cluster"
                     ]
                 },
+                
                 "hidden": {
                     "attributes": [
                         "primaryContact"

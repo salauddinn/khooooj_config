@@ -68,6 +68,23 @@
                 "showDetailsButton": true,
                 "displayOrder": 5
             },
+
+            "procedure": {
+                "translationKey": "Procedure",
+                "orderType": "Procedure Order",
+                "type": "ordersControl",
+                "translationKey": "Procedure",
+                "displayOrder": 5,
+                "dashboardConfig": {
+                    "conceptNames": [
+                        "Procedure Date",
+                        "Procedure Name",
+                        "ProcudureNotes"
+                    ],
+                    "numberOfVisits": 2
+            }
+        },
+
             "programs": {
                 "translationKey": "DASHBOARD_TITLE_PROGRAMS_KEY",
                 "type": "programs",
